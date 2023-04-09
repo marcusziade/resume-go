@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Coding Projects</title>
+  </head>
+  <body>
+    <h1>My Coding Projects</h1>
+    <ul id="projects-list">
+      {{range .Projects}}
+      <li>
+        <h2>{{.Title}}</h2>
+        <p>{{.Description}}</p>
+        <a href="{{.RepoURL}}">View on GitHub</a>
+      </li>
+      {{end}}
+    </ul>
+  </body>
+</html>
